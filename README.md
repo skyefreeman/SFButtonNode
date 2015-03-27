@@ -22,6 +22,7 @@ SFButtonNode allows you to easily create buttons with customs shapes, colors, im
 
 ```
     CGSize size = CGSizeMake(150, 60)
+    
     SKShapeNode *shape1 = [SKShapeNode shapeNodeWithEllipseOfSize:size];
     [shape setFillColor:color redColor];
 
