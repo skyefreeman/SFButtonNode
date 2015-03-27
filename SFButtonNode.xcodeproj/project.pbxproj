@@ -15,6 +15,9 @@
 		EE5E21F41AC608EF00C9A310 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5E21F31AC608EF00C9A310 /* Images.xcassets */; };
 		EE5E21F71AC608EF00C9A310 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5E21F51AC608EF00C9A310 /* LaunchScreen.xib */; };
 		EE5E22031AC608F000C9A310 /* SFButtonNodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E22021AC608F000C9A310 /* SFButtonNodeTests.m */; };
+		EE5E22101AC60BC400C9A310 /* SFButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E220F1AC60BC400C9A310 /* SFButtonNode.m */; };
+		EE5E22141AC6138F00C9A310 /* button_down_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5E22121AC6138F00C9A310 /* button_down_blank.png */; };
+		EE5E22151AC6138F00C9A310 /* button_up_blank.png in Resources */ = {isa = PBXBuildFile; fileRef = EE5E22131AC6138F00C9A310 /* button_up_blank.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,10 @@
 		EE5E21FC1AC608F000C9A310 /* SFButtonNodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFButtonNodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE5E22011AC608F000C9A310 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE5E22021AC608F000C9A310 /* SFButtonNodeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SFButtonNodeTests.m; sourceTree = "<group>"; };
+		EE5E220E1AC60BC400C9A310 /* SFButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFButtonNode.h; sourceTree = "<group>"; };
+		EE5E220F1AC60BC400C9A310 /* SFButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFButtonNode.m; sourceTree = "<group>"; };
+		EE5E22121AC6138F00C9A310 /* button_down_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_down_blank.png; sourceTree = "<group>"; };
+		EE5E22131AC6138F00C9A310 /* button_up_blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_up_blank.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +91,11 @@
 		EE5E21E01AC608EF00C9A310 /* SFButtonNode */ = {
 			isa = PBXGroup;
 			children = (
+				EE5E220E1AC60BC400C9A310 /* SFButtonNode.h */,
+				EE5E220F1AC60BC400C9A310 /* SFButtonNode.m */,
 				EE5E220D1AC6096B00C9A310 /* Application */,
 				EE5E220C1AC6096100C9A310 /* Scenes */,
+				EE5E22111AC60C8400C9A310 /* Assets */,
 				EE5E21E11AC608EF00C9A310 /* Supporting Files */,
 			);
 			path = SFButtonNode;
@@ -95,7 +105,6 @@
 			isa = PBXGroup;
 			children = (
 				EE5E21F01AC608EF00C9A310 /* Main.storyboard */,
-				EE5E21F31AC608EF00C9A310 /* Images.xcassets */,
 				EE5E21F51AC608EF00C9A310 /* LaunchScreen.xib */,
 				EE5E21E21AC608EF00C9A310 /* Info.plist */,
 				EE5E21E31AC608EF00C9A310 /* main.m */,
@@ -138,6 +147,16 @@
 				EE5E21EE1AC608EF00C9A310 /* GameViewController.m */,
 			);
 			name = Application;
+			sourceTree = "<group>";
+		};
+		EE5E22111AC60C8400C9A310 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E22121AC6138F00C9A310 /* button_down_blank.png */,
+				EE5E22131AC6138F00C9A310 /* button_up_blank.png */,
+				EE5E21F31AC608EF00C9A310 /* Images.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,8 +239,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE5E22151AC6138F00C9A310 /* button_up_blank.png in Resources */,
 				EE5E21F71AC608EF00C9A310 /* LaunchScreen.xib in Resources */,
 				EE5E21F41AC608EF00C9A310 /* Images.xcassets in Resources */,
+				EE5E22141AC6138F00C9A310 /* button_down_blank.png in Resources */,
 				EE5E21F21AC608EF00C9A310 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,6 +263,7 @@
 			files = (
 				EE5E21EF1AC608EF00C9A310 /* GameViewController.m in Sources */,
 				EE5E21E71AC608EF00C9A310 /* AppDelegate.m in Sources */,
+				EE5E22101AC60BC400C9A310 /* SFButtonNode.m in Sources */,
 				EE5E21EA1AC608EF00C9A310 /* GameScene.m in Sources */,
 				EE5E21E41AC608EF00C9A310 /* main.m in Sources */,
 			);
@@ -436,6 +458,7 @@
 				EE5E22081AC608F000C9A310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE5E22091AC608F000C9A310 /* Build configuration list for PBXNativeTarget "SFButtonNodeTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +467,7 @@
 				EE5E220B1AC608F000C9A310 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

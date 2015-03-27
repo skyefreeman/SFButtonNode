@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>916A7456-7F6D-49FA-AD9E-DF51C2A5CBCD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SFButtonNode</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>1C182C9B3C5018414F5DC150B7D97280753360BA</key>
+		<string>https://github.com/skyefreeman/SFButtonNode.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SFButtonNode.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>1C182C9B3C5018414F5DC150B7D97280753360BA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/skyefreeman/SFButtonNode.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>1C182C9B3C5018414F5DC150B7D97280753360BA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>1C182C9B3C5018414F5DC150B7D97280753360BA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SFButtonNode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
