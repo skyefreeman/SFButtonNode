@@ -1,26 +1,24 @@
-# ${1:Project Name}
+# SFButtonNode
 SFButtonNode allows you to easily create buttons with customs shapes, colors, images and labels in the SpriteKit framework. It also allows for much simpler workflow in chaining methods to your buttons, without the need to use `- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;`
 
 ## Creating a button with textures
-`
-	SFButtonNode *textureButton = [SFButtonNode buttonWithIdleImageName:@"some_image_1.png" selectedImageName:@"some_image_2.png"];
-	[self addChild:textureButton];				
 
-`
+   	`SFButtonNode *textureButton = [SFButtonNode buttonWithIdleImageName:@"some_image_1.png" selectedImageName:@"some_image_2.png"];
+	[self addChild:textureButton];`
+
 ## Creating a circle button
 
-`
-    SFButtonNode *circleColorButton = [SFButtonNode buttonWithCircleOfRadius:55.0
+
+    `SFButtonNode *circleColorButton = [SFButtonNode buttonWithCircleOfRadius:55.0
                                                                idleFillColor:[SKColor redColor]
                                                            selectedFillColor:[SKColor blueColor]
                                                                labelWithText:@"Button!"];
-    [self addChild:circleColorButton];
-`
+    [self addChild:circleColorButton];`
 
 ## Creating a custom shape button
 
-`
-    CGSize size = CGSizeMake(150, 60)
+
+    `CGSize size = CGSizeMake(150, 60)
     SKShapeNode *shape1 = [SKShapeNode shapeNodeWithEllipseOfSize:size];
     [shape setFillColor:color redColor];
 
@@ -30,13 +28,13 @@ SFButtonNode allows you to easily create buttons with customs shapes, colors, im
     SFButtonNode *shapeButton = [SFButtonNode buttonWithIdleShape:shape1
                                                     selectedShape:shape2
                                                     labelWithText:@"Button!"];
-    [self addChild:shapeButton];
-`
+    [self addChild:shapeButton];`
+
 
 ## Adding a selector to a button
 
-`
-- (void)didMoveToView:(SKView)view {
+
+`- (void)didMoveToView:(SKView)view {
     SFButtonNode *button = [SFButtonNode buttonWithIdleColor:[SKColor redColor] selectedColor:[SKColor blueColor] size:CGSizeMake(150, 50)];
     [self addChild:button];
     
@@ -52,7 +50,5 @@ SFButtonNode allows you to easily create buttons with customs shapes, colors, im
 }
 
 - (void)touchUpOutside {
-}
-
-`
+}`
 
