@@ -34,7 +34,7 @@ SFButtonNode allows you to easily create buttons with customs shapes, colors, im
 ## Adding a selector to a button
 
 
-- (void)didMoveToView:(SKView)view {
+`- (void)didMoveToView:(SKView)view {
     SFButtonNode *button = [SFButtonNode buttonWithIdleColor:[SKColor redColor] selectedColor:[SKColor blueColor] size:CGSizeMake(150, 50)];
     [self addChild:button];
     
@@ -44,11 +44,14 @@ SFButtonNode allows you to easily create buttons with customs shapes, colors, im
 }
 
 - (void)touchDownInside {
+  NSLog(@"Touch down inside");
 }
 
 - (void)touchUpInside {
+  NSLog(@"Touch up inside");
 }
 
 - (void)touchUpOutside {
-}
+  NSLog(@"Touch up outside");
+}`
 
