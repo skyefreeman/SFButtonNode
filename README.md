@@ -1,5 +1,5 @@
 # SFButtonNode
-SFButtonNode allows you to easily create buttons with customs shapes, colors, images and labels in the SpriteKit framework. It also allows for much simpler workflow in chaining methods to your buttons, without the need to use `- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;`
+SFButtonNode allows you to easily create buttons with customs shapes, colors, images and labels with SpriteKit. It also allows for much simpler workflow in chaining methods to your buttons, without the need to use `- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;`
 
 ## Creating a button with textures
 
