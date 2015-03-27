@@ -10,7 +10,6 @@
 		EE5E21E41AC608EF00C9A310 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E21E31AC608EF00C9A310 /* main.m */; };
 		EE5E21E71AC608EF00C9A310 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E21E61AC608EF00C9A310 /* AppDelegate.m */; };
 		EE5E21EA1AC608EF00C9A310 /* GameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E21E91AC608EF00C9A310 /* GameScene.m */; };
-		EE5E21EC1AC608EF00C9A310 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = EE5E21EB1AC608EF00C9A310 /* GameScene.sks */; };
 		EE5E21EF1AC608EF00C9A310 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE5E21EE1AC608EF00C9A310 /* GameViewController.m */; };
 		EE5E21F21AC608EF00C9A310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE5E21F01AC608EF00C9A310 /* Main.storyboard */; };
 		EE5E21F41AC608EF00C9A310 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE5E21F31AC608EF00C9A310 /* Images.xcassets */; };
@@ -36,7 +35,6 @@
 		EE5E21E61AC608EF00C9A310 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EE5E21E81AC608EF00C9A310 /* GameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		EE5E21E91AC608EF00C9A310 /* GameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameScene.m; sourceTree = "<group>"; };
-		EE5E21EB1AC608EF00C9A310 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		EE5E21ED1AC608EF00C9A310 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
 		EE5E21EE1AC608EF00C9A310 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
 		EE5E21F11AC608EF00C9A310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -86,16 +84,8 @@
 		EE5E21E01AC608EF00C9A310 /* SFButtonNode */ = {
 			isa = PBXGroup;
 			children = (
-				EE5E21E51AC608EF00C9A310 /* AppDelegate.h */,
-				EE5E21E61AC608EF00C9A310 /* AppDelegate.m */,
-				EE5E21E81AC608EF00C9A310 /* GameScene.h */,
-				EE5E21E91AC608EF00C9A310 /* GameScene.m */,
-				EE5E21EB1AC608EF00C9A310 /* GameScene.sks */,
-				EE5E21ED1AC608EF00C9A310 /* GameViewController.h */,
-				EE5E21EE1AC608EF00C9A310 /* GameViewController.m */,
-				EE5E21F01AC608EF00C9A310 /* Main.storyboard */,
-				EE5E21F31AC608EF00C9A310 /* Images.xcassets */,
-				EE5E21F51AC608EF00C9A310 /* LaunchScreen.xib */,
+				EE5E220D1AC6096B00C9A310 /* Application */,
+				EE5E220C1AC6096100C9A310 /* Scenes */,
 				EE5E21E11AC608EF00C9A310 /* Supporting Files */,
 			);
 			path = SFButtonNode;
@@ -104,6 +94,9 @@
 		EE5E21E11AC608EF00C9A310 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EE5E21F01AC608EF00C9A310 /* Main.storyboard */,
+				EE5E21F31AC608EF00C9A310 /* Images.xcassets */,
+				EE5E21F51AC608EF00C9A310 /* LaunchScreen.xib */,
 				EE5E21E21AC608EF00C9A310 /* Info.plist */,
 				EE5E21E31AC608EF00C9A310 /* main.m */,
 			);
@@ -125,6 +118,26 @@
 				EE5E22011AC608F000C9A310 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EE5E220C1AC6096100C9A310 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E21E81AC608EF00C9A310 /* GameScene.h */,
+				EE5E21E91AC608EF00C9A310 /* GameScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		EE5E220D1AC6096B00C9A310 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EE5E21E51AC608EF00C9A310 /* AppDelegate.h */,
+				EE5E21E61AC608EF00C9A310 /* AppDelegate.m */,
+				EE5E21ED1AC608EF00C9A310 /* GameViewController.h */,
+				EE5E21EE1AC608EF00C9A310 /* GameViewController.m */,
+			);
+			name = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,7 +222,6 @@
 			files = (
 				EE5E21F71AC608EF00C9A310 /* LaunchScreen.xib in Resources */,
 				EE5E21F41AC608EF00C9A310 /* Images.xcassets in Resources */,
-				EE5E21EC1AC608EF00C9A310 /* GameScene.sks in Resources */,
 				EE5E21F21AC608EF00C9A310 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
