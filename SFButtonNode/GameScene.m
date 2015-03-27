@@ -88,5 +88,7 @@
 - (void)textureButtonTouchDown {
     NSLog(@"Touched button with textures!");
 }
-
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    
+}
 @end
